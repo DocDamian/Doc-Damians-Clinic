@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Damian's Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+                padding-right: 0;
+            }
+            
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+            
+            .main h2 {
+                font-size: 24px;
+            }
+            
+            .main p {
+                font-size: 16px;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        .container {
+            width: 100%;
+            min-height: 70vh;
+
+         background:
+          linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0.4) 60%,
+            rgb(1, 1, 1) 100%
+            ),
+            url("img/Img1.png") center / cover no-repeat;
+
+            position: relative;
+            z-index: 1; 
+        }
+
+        .container > div {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .main {
+          width: 100%;          
+          padding: 80px 20px;   
+          margin: 0;            
+          text-align: center;
+          background-color: #111;
+          color: white;
+}
+        
+        .main h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .main p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/emailjs.js"></script>
+
+</head>
+<body>
+    <header>
+    <h1 style="color: #000000;">Erwin Damian V. Marcelo, MD,RN,CLSSYB</h1>
+    <h1 class="subtitle">Diplomate in Internal Medicine</h1>
+    <p style="color: #3498db;">Caring for your better health!</p>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="info.html">About</a>
+        <a href="location.html">Untitled</a>
+    </nav>
+
+</header>
+    <div class="container"></div>
+    <section class="main">
+        <h2>Quality Healthcare Services</h2>
+        <p>We provide professional medical care for you and your family.</p>
+        <a href="info.html" class="btn">See more</a>
+    </section>
+
+ <section class="contact-section">
+    <h2>Contact Us</h2>
+
+    <form class="emailjs-form">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <input type="text" name="contact_number" placeholder="Your Number (9999-999-9999)" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <input type="hidden" name="current_time">
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs@4/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
+    <footer>
+        <p>&copy; Dr. Erwin Damian. All rights reserved.</p>
+    </footer>
+</body>
+</html>
