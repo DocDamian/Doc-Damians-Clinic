@@ -34,8 +34,11 @@
 }
 
 .about-image {
-  flex: 1 1 400px;  /* image grows/shrinks */
-  text-align: center;
+  flex: 1 1 400px;
+  display: flex;              /* make it a flex container */
+  justify-content: center;    /* centers the image horizontally */
+  align-items: center;        /* centers the image vertically if container has height */
+  text-align: center;         /* fallback for inline elements */
 }
 
 .about-image img {
