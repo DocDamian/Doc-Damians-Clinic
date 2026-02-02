@@ -255,3 +255,14 @@ nav a:hover {
         .emailjs-form button:hover {
             background-color: #2980b9;
         }
+
+.seamless-image {
+  width: 100%;
+  overflow: none; /* hides anything outside */
+}
+
+.seamless-image img {
+  width: 100%;
+  height: auto;       /* maintains aspect ratio */
+  display: block;     /* removes small gaps below image */
+}
